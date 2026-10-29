@@ -13,8 +13,8 @@ public class DBConnection {
     private static final String USER = "root";
 
     // Apna MySQL password yahan likho
-    private static final String PASSWORD = "Raman@1845";
-
+    private static final String PASSWORD =
+            System.getenv("DB_PASSWORD");
     public static Connection getConnection() {
 
         Connection con = null;
